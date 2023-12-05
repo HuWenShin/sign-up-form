@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="left"></div>
+    <div class="right">
+
+        <h1>Sign up now!</h1>
+        <p>This is not a real online service, but nice to meet you anyways 😉</p>
+        <h2>Account Information</h2>
+
+        <form action="#" method="get">
+
+            <div class="form-row">
+                <label for="preferred_name">Preferred Name *</label>
+                <input type="text" id="preferred_name" name="preferred_name" placeholder="" required>
+            </div>
+
+            <div class="form-row">
+                <label for="user_email">Email *</label>
+                <input type="email" id="user_email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-row">
+                <label for="user_phone">Phone Number *</label>
+                <input type="tel" id="user_phone" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            </div>
+
+            <div class="form-row">
+                <label for="user_password">Password *</label>
+                <input type="password" id="user_password" name="password" placeholder="8-16 characters" required>
+            </div>
+
+            <div>
+                <input type="checkbox" id="mail_list" name="mail_list">
+                <label for="mail_list">Keep me updated on exclusive offers and more.</label>
+            </div>
+
+            <small>By creating an account, you agree to our <a href=""><strong>Terms & Conditions</strong></a> and <a href=""><strong>Privacy Policy</strong></a>.</small>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href=""><strong>Log In</strong></a></p>
+
+        </form>
+    </div>
+    
+</body>
+</html>
