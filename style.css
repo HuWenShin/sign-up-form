@@ -1,4 +1,145 @@
-.form-row {
+html, body {
+    height: 100%;
+    background: linear-gradient(225deg, #ffe2d6 0%, #d9cafe 100%)
+}
+
+.container {
+    display: flex;
+    color: #5c535e;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.top {
+    text-align: center;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 1;
+    margin: 16px;
+}
+
+.left img {
+    max-width: 100%;
+    border-radius: 40%;
+}
+
+.right {
+    flex: 1;
+    margin: 16px;
+}
+
+h1, h2, p {
+    margin: 8px 0;
+}
+
+div {
     display: flex;
     flex-direction: column;
+    margin: 8px 0;
 }
+
+input {
+    border: none;
+    border-bottom: 1.5px solid #5c535e;
+    padding: 8px;
+    margin: 4px;
+    background: rgba(255,255,255,0.2);
+}
+
+input:user-invalid {
+    border-bottom: 1.5px solid #ac2e2e;
+}
+
+input:user-valid {
+    border-bottom: 1.5px solid #1c8f4e;
+}
+
+.log-in {
+    text-align: center;
+}
+
+/* button style */
+.button-50 {
+    background-color: #7d428a;
+    color: #fff;
+    appearance: button;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 20px auto 8px auto;
+    overflow: visible;
+    min-width: 50%;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-50:focus {
+    text-decoration: none;
+  }
+  
+  .button-50:hover {
+    text-decoration: none;
+  }
+  
+  .button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button-50 {
+      padding: 12px 50px;
+    }
+  }
+
+.check {
+    flex-direction: row;
+}
+
+.check label {
+    margin: 0 0 0 5px;
+}
+
+/*  
+p {
+    margin: 0;
+}
+
+form {
+    width: 80%;
+    padding: 10px;
+}
+
+.form-item {
+    padding: 10px 0px;
+}
+
+
+*/
